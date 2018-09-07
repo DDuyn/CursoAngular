@@ -8,6 +8,7 @@ import { ListItemComponent } from './list-item/list-item.component';
 import { DetailItemComponent } from './detail-item/detail-item.component';
 import { FilterItemsPipe } from './filter-items.pipe';
 import { TranslatePipe } from './translate.pipe';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TranslatePipe } from './translate.pipe';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
